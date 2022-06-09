@@ -5,8 +5,7 @@
     --accent-color: #537ece;
     --headings-color: #537ece;
     --menu-bg-color: #171a21;
-    --menu-fg-color: #eeeeee;
-    --link-color: #335C67;
+    --menu-fg-color: #ffffff;
     --medium-gap: 1rem;
 }
 
@@ -83,4 +82,8 @@ figure.picture {
 figure.picture img {
     display: block;
     max-width: 100%;
+}
+
+a:after {
+    content: " \2192";
 }
