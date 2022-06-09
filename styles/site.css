@@ -4,7 +4,6 @@
     --main-fg-color: #111111;
     --accent-color: #537ece;
     --headings-color: #537ece;
-    --menu-bg-color: #171a21;
     --menu-fg-color: #ffffff;
     --medium-gap: 1rem;
 }
@@ -17,36 +16,66 @@ h2, h3, h4 {
     border-bottom: 2px solid var(--headings-color);
 }
 
-body > nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--menu-bg-color);
+.navbar-div {
+    position:fixed;
+    height:70px;
+    width:100%;
+    background-color: #171a2198;
 }
 
-ul.main-menu {
-    display: flex;
+.navbar {
+    top: 0%;
+    left: 0%;
+  }
+  
+  .navbar ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul.main-menu li a {
-    padding: var(--medium-gap);
-    display: block;
-    text-decoration: none;
+    align-items: inline;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
     color: var(--menu-fg-color);
-}
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 180px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: var(--accent-color);
+    stroke: 10px #000000;
+  }
+  
+  .navbar .active {
+    color: var(--accent-color);
+  }
 
-ul.main-menu li a:hover {
-    background-color: var(--accent-color);
-    color: var(--main-fg-color);
-}
-
-ul.main-menu li a::after {
+  ul.main-menu li a::after {
     content: none;
 }
+  
+  @media screen and (max-width: 700px) {
+    .navbar ul li a {
+      display: block;
+      width: 100px;
+      height: 50px;
+      font-size: 25px;
+    }
+    .navbar-div {
+        position:fixed;
+        height:200px;
+        width: 100%;
+        background-color: var(--menu-bg-color);
+    }
+  }
 
 header {
     background-color: var(--main-fg-color);
