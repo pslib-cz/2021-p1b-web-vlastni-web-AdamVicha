@@ -1,0 +1,86 @@
+:root {
+    --page-bg-color: #000000;
+    --main-bg-color: #ffffff;
+    --main-fg-color: #111111;
+    --accent-color: #537ece;
+    --headings-color: #537ece;
+    --menu-bg-color: #171a21;
+    --menu-fg-color: #eeeeee;
+    --link-color: #335C67;
+    --medium-gap: 1rem;
+}
+
+html {
+    background-color: var(--page-bg-color);
+}
+
+h2, h3, h4 {
+    border-bottom: 2px solid var(--headings-color);
+}
+
+body > nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--menu-bg-color);
+}
+
+ul.main-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.main-menu li a {
+    padding: var(--medium-gap);
+    display: block;
+    text-decoration: none;
+    color: var(--menu-fg-color);
+}
+
+ul.main-menu li a:hover {
+    background-color: var(--accent-color);
+    color: var(--main-fg-color);
+}
+
+ul.main-menu li a::after {
+    content: none;
+}
+
+header {
+    background-color: var(--main-fg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/Steam_title1.jpg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+header > h1 {
+    font-family: "Lato";
+    font-size: 5rem;
+    color: var(--main-bg-color);
+}
+
+.content-wrapper {
+    max-width: 960px; 
+    margin: 0 auto;
+    background-color: var(--main-bg-color);
+}
+
+.content-wrapper > * {
+    padding: var(--medium-gap);
+}
+
+figure.picture {
+    margin: 0;
+}
+
+figure.picture img {
+    display: block;
+    max-width: 100%;
+}
