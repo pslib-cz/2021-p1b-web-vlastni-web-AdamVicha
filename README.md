@@ -14,15 +14,16 @@ Editací tohoto souboru a náhradou ``[ ]`` za ``[x]`` můžete evidovat, které
 ### HTML, struktura souborů
 
 * [x] Web má alespoň dvě stránky provázané společnými styly
-* [ ] HTML kód je validní bez chyb ve [validátoru](https://validator.w3.org/)
+* [x] HTML kód je validní bez chyb ve [validátoru](https://validator.w3.org/)
 * [x] HTML značky dávají smysl, kód obsahuje ``<article>``, ``<section>``, ``<header>``, ``<nav>``.
 * [x] Navigace mezi stránkami je tvořená přes ``<nav><ul><li><a>`` a je funkční i po zkopírování na lokální disk
 * [x] Soubory webu jsou členěny do složek (např. ``/styles``, ``/images``, ``/fonts``)
-* [ ] Soubory webu se nacházejí v GitHubovém repozitáři
-* [ ] V repozitáři se soubory ocitly pomocí commitů a pushů a těch je více než 3, rozprostřených do celé doby vypracovávání zadání
+* [x] Soubory webu se nacházejí v GitHubovém repozitáři
+* [x] V repozitáři se soubory ocitly pomocí commitů a pushů a těch je více než 3, rozprostřených do celé doby vypracovávání zadání
 * [ ] Web je dostupný přes Github Pages (do README.md přidejte odkaz)
+    Moje stránka: https://animated-potato-1559d3bb.pages.github.io/
 * [ ] Celková načítaná velikost jednotlivých stránek nepřesahuje jednotky MiB
-* [ ] Stránka obsahuje formátovaný seznam zdrojů textu a obrázků
+* [x] Stránka obsahuje formátovaný seznam zdrojů textu a obrázků
 
 ### CSS, vzhled
 
@@ -43,9 +44,9 @@ Editací tohoto souboru a náhradou ``[ ]`` za ``[x]`` můžete evidovat, které
     min-height: 100vh;
 }
 ````
-* [ ] Styly definují vzhled prvků podle typografických zvyklosti (velikosti nadpisů, formát odstavců)
+* [x] Styly definují vzhled prvků podle typografických zvyklosti (velikosti nadpisů, formát odstavců)
 * [x] Odkazy (například menu) využívají efekt ``hover``
-* [ ] Za nebo před odkazy v textu je přidána ikonka (např. šipka) (využití ``::before`` nebo ``::after``)
+* [x] Za nebo před odkazy v textu je přidána ikonka (např. šipka) (využití ``::before`` nebo ``::after``)
 
 ### Vyzkoušejte nad rámec probrané látky
 
